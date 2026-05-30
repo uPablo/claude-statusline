@@ -1,0 +1,27 @@
+name: Feature request
+description: Suggest a new metric, segment, or behavior
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's missing
+      description: The metric or behavior you want, and why it's useful at a glance.
+    validations:
+      required: true
+  - type: dropdown
+    id: line
+    attributes:
+      label: Which line would it live on
+      options:
+        - 1 — Code (dir/git/languages)
+        - 2 — Claude (session/cost)
+        - 3 — Limits (usage/context)
+        - 4 — System (machine metrics)
+        - New line
+        - Not sure
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (optional)
+      description: Mockup of how it'd render, data source, platform constraints, etc.

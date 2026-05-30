@@ -1,0 +1,63 @@
+name: Bug report
+description: Something in the status line renders wrong, crashes, or shows bad data
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for the report. Fill in the fields below so the issue is reproducible.
+  - type: dropdown
+    id: variant
+    attributes:
+      label: Which script
+      options:
+        - status-line.sh (Bash)
+        - windows/status-line.ps1 (PowerShell)
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      options:
+        - macOS
+        - Linux
+        - Windows (Git Bash / WSL)
+        - Windows (native PowerShell)
+    validations:
+      required: true
+  - type: input
+    id: shell-version
+    attributes:
+      label: Shell version
+      description: Output of `bash --version` or `pwsh --version`
+      placeholder: GNU bash 5.2.21
+    validations:
+      required: true
+  - type: input
+    id: cc-version
+    attributes:
+      label: Claude Code version
+      description: Shown as the `v…` chip on line 2, or run `claude --version`
+      placeholder: v2.1.158
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw vs. what you expected. Paste the rendered line(s) if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: payload
+    attributes:
+      label: Status-line payload (optional)
+      description: |
+        The script dumps the last payload to `$TMPDIR/cc-statusline-payload.json`
+        (`/tmp/cc-statusline-payload.json` on Linux). Redact email/paths before pasting.
+      render: json
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. cd into a repo with …
+        2. …

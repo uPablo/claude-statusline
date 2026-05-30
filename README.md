@@ -1,10 +1,12 @@
 # claude-statusline
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-![Platform: macOS](https://img.shields.io/badge/platform-macOS-lightgrey.svg?logo=apple&logoColor=white)
-![Shell: Bash](https://img.shields.io/badge/shell-bash-121011.svg?logo=gnu-bash&logoColor=white)
-![Made for Claude Code](https://img.shields.io/badge/made%20for-Claude%20Code-d97757.svg)
-![Dependencies: jq](https://img.shields.io/badge/deps-jq%20%2B%20ccusage-blue.svg)
+[![License](https://img.shields.io/github/license/uPablo/claude-statusline)](LICENSE)
+![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey)
+![Shell](https://img.shields.io/badge/shell-bash%20%2B%20powershell-121011?logo=gnu-bash&logoColor=white)
+![Made for Claude Code](https://img.shields.io/badge/made%20for-Claude%20Code-d97757)
+[![GitHub last commit](https://img.shields.io/github/last-commit/uPablo/claude-statusline)](https://github.com/uPablo/claude-statusline/commits/main)
+[![GitHub stars](https://img.shields.io/github/stars/uPablo/claude-statusline?style=flat)](https://github.com/uPablo/claude-statusline/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/uPablo/claude-statusline)](https://github.com/uPablo/claude-statusline/issues)
 
 A rich, multi-line status line for [Claude Code](https://claude.com/claude-code) — a developer cockpit focused on **account/usage control** plus the dev context you actually want at a glance.
 
